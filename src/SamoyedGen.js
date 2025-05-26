@@ -7,7 +7,7 @@ const CorgiGenerator = () => {
   const fetchCorgiImage = async () => {
     setLoading(true);
     try {
-      const response = await fetch('https://dog.ceo/api/breed/corgi/images/random');
+      const response = await fetch('https://dog.ceo/api/breed/samoyed/images/random');
       const data = await response.json();
       setCorgiImage(data.message);
     } catch (error) {
